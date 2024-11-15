@@ -28,19 +28,19 @@ const achievementList = [
 const AchievemantSection = () => {
 
     return (
-        <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            <div className='border-[#33353F] border rounded-md py-8 px-16 flex flex-row items-center justify-between'>
+        <div className='py-8 xl:gap-16 sm:py-16 xl:px-16'>
+            <div className='border-[#33353F] border rounded-md lg:py-8 md:py-4 sm:py-3 lg:px-16 md:px-4 sm:px-1 flex flex-row items-center justify-between'>
                 {
                     achievementList.map((achievement, index) => {
                         return (
-                            <div key={index} className="flex flex-col items-center justify-center mx-4 sm:my-0">
-                                <h2 className='text-white text-4xl font-bold flex flex-row'>
+                            <div key={index} className="flex flex-col items-center justify-center lg:mx-4 md:mx-2 sm:mx-0 sm:my-0">
+                                <h2 className='text-white lg:text-4xl md:text-2xl sm:text-xl font-bold flex flex-row'>
                                     {achievement.prefix}
                                     <AnimatedNumbers
                                         includeComma
                                         animateToNumber={parseInt(achievement.value)}
                                         local="en-US"
-                                        className="text-white text-4xl font-bold"
+                                        className="text-white lg:text-4xl md:text-2xl sm:text-xl font-bold"
                                         configs={((_, index) => {
                                             return {
                                                 mass: 1,
