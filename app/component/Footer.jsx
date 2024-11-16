@@ -14,7 +14,7 @@ const Footer = () => {
             height={90}
           />
         </div>
-        <p className='text-purple-800 mt-10 pr-10'>All rights reserved.</p>
+        <p className='text-purple-800 mt-10 p-15'>All rights reserved.</p>
       </div>
     </footer>
   )
