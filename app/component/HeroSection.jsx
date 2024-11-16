@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
     return (
-        <section className="lg:py-16 px-24">
+        <section className="lg:py-16 lg:px-2 md:px-1 sm:px-1">
             <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -14,25 +14,27 @@ function HeroSection() {
                 className="grid grid-cols-1 sm:grid-cols-12"
             >
                 <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
-                    <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                            Hello I&apos;m{" "}
-                        </span>
-                        <br />
-                        <TypeAnimation
-                            sequence={[
-                                "manar shblah",
-                                1000,
-                                "Front End Developer",
-                                1000,
-                                "Web Developer",
-                                1000,
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                        />
-                    </h1>
+                    <div className="h-52 ">
+                        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                                Hello I&apos;m{" "}
+                            </span>
+                            <br />
+                            <TypeAnimation
+                                sequence={[
+                                    "manar shblah",
+                                    1000,
+                                    "Front End Developer",
+                                    1000,
+                                    "Web Developer",
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                repeat={Infinity}
+                            />
+                        </h1>
+                    </div>
                     <p className="text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl">
                         I&apos;m Manar Shblah, an engineer, and this is my Portfolio. Thanks
                         for your visit.
